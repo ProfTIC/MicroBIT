@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.3.3. Acelerómetro | Tema 3 - Micro:BIT </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Mª Dolores Robles" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-14"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 3 - Micro:BIT</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="1_qu_es_microbit.html" class="no-ch">1. Qué es Micro:BIT</a></li>
+   <li><a href="2_cmo_programamos.html" class="no-ch">2. Cómo programamos</a></li>
+   <li class="current-page-parent"><a href="3_ejemplos.html" class="current-page-parent daddy">3. Ejemplos</a>
+   <ul>
+      <li><a href="31_empezamos_el_programa.html" class="no-ch">3.1. Empezamos el programa</a></li>
+      <li><a href="32_pulsadores.html" class="no-ch">3.2. Pulsadores</a></li>
+      <li class="current-page-parent"><a href="33_sensores.html" class="current-page-parent daddy">3.3. Sensores</a>
+      <ul>
+         <li><a href="331_temperatura.html" class="no-ch">3.3.1. Temperatura</a></li>
+         <li><a href="332_sensor_de_luminosidad.html" class="no-ch">3.3.2. Sensor de luminosidad</a></li>
+         <li id="active"><a href="333_acelermetro.html" class="active no-ch">3.3.3. Acelerómetro</a></li>
+         <li><a href="334_brjula.html" class="no-ch">3.3.4. Brújula</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="332_sensor_de_luminosidad.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="334_brjula.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.3.3. Acelerómetro</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id19">
+<div class="iDevice emphasis0" >
+<div id="ta19_117_2" class="block iDevice_content">
+<div class="exe-text"><p>El acelerómetro mide la aceleración de la placa micro:bit. Se activa cuando se mueve la placa y puede detectar acciones como agitar, girar o soltar la placa. Como en el resto de sensores, tenemos una variable que mide la aceleración: </p>
+<figure class="exe-figure exe-image position-center" style="width: 222px;"><img src="Aceleracion.png" alt="Aceleración" style="display: block; margin-left: auto; margin-right: auto;" width="222" hspace="auto" height="193" /></figure>
+<p>En este caso, podrás observar que hay una lista desplegable para los valores que se corresponde con la aceleración según los ejes X, Y, Z y la fuerza de aceleración. En la siguiente imagen se muestra la dirección de cada eje:</p>
+<figure class="exe-figure exe-image position-center" style="width: 500px;"><img src="xyz-gacfdfc1c3_1280.png" alt="Coordenadas 3d" width="500" height="250" />
+<figcaption class="figcaption"><a href="https://pixabay.com/es/users/jjuni-27151/" target="_blank" class="author" rel="noopener">jjui</a>. <a href="https://pixabay.com/es/vectors/xyz-3-dimensiones-3d-coordenadas-3d-2170076/" target="_blank" class="title" rel="noopener"><em>https://pixabay.com/es/vectors/xyz-3-dimensiones-3d-coordenadas-3d-2170076/</em></a></figcaption>
+</figure>
+<p>Como ejemplo, mostraremos el valor del acelerómetro según el eje Z usando el siguiente código:</p>
+<p><img src="Acelerometroz.png" alt="Programa para mostrar el acelerómetro según el eje Z" style="display: block; margin-left: auto; margin-right: auto;" width="346" height="148" /></p>
+<p></p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Comprueba lo aprendido" /></div><div class="feedback js-feedback js-hidden"><p>Crea un programa que muestre la fuerza total de la aceleración que se le aplica</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id21">
+<div class="iDevice emphasis0" >
+<div id="ta21_119_2" class="block iDevice_content">
+<div class="exe-text"><p>Otra instrucción útil para manejar el acelerómetro es la siguiente:</p>
+<p><img src="Si_Agitado.png" alt="Instrucción si_agitado" style="display: block; margin-left: auto; margin-right: auto;" width="156" height="111" /></p>
+<p>En este caso podemos incluir dentro del bloque si_agitado las instrucciones que queramos que se ejecuten cuando se agite la micro:bit. Por ejemplo, si queremos que se muestre un número al azar entre 0 y 10 cuando se agite la tarjeta tendremos que usar el siguiente programa:</p>
+<p><img src="Ejemplo_Agitado.png" alt="Ejemplo_agitado" style="display: block; margin-left: auto; margin-right: auto;" width="437" height="148" /></p>
+<p>Recuerda que cuando una instrucción tiene una flecha significa que hay más opciones disponibles. En este caso tenemos la posibilidad de ver si la tarjeta está hacia arriba o abajo, el logotipo hacia arriba o abajo, etc.:</p>
+<p><img src="Opciones_Si.png" alt="Opciones_Si" style="display: block; margin-left: auto; margin-right: auto;" width="425" height="389" /></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id20">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta20_118_2" class="block iDevice_content">
+<div class="pbl-task-description"><h2>Ejercicio 1</h2>
+<p>Crea un programa que muestre una cara triste cuando la tarjeta micro:bit esté mirando hacia abajo y una cara feliz cuando mire hacia arriba</p>
+<h2>Ejercicio 2</h2>
+<p>Crea un programa que muestre una flecha hacia arriba cuando el logotipo de la tarjeta micro:bit esté mirando hacia arriba y una flecha hacia abajo cuando mire en ese sentido</p>
+<h2>Ejercicio 3</h2>
+<p>En este programa simularemos un dado. Sigue los siguientes pasos:</p>
+<ul>
+<li>Crea un icono que represente cada cara de un lado</li>
+<li>Crea una variable número</li>
+<li>Genera un número aleatorio entre 1 y 6 y guarda el valor obtenido en la variable número</li>
+<li>Muestra el icono correspondiente al icono obtenido</li>
+</ul>
+<figure class="exe-figure exe-image position-center" style="width: 640px;"><img src="DadoModificado.png" alt="Caras de un dado" width="640" height="130" />
+<figcaption class="figcaption"><a href="https://pixabay.com/es/users/clker-free-vector-images-3736/" target="_blank" class="author" rel="noopener">https://pixabay.com/es/users/clker-free-vector-images-3736/</a>. <a href="https://pixabay.com/es/vectors/dado-juegos-juego-seis-cara-26772/" target="_blank" class="title" rel="noopener"><em>https://pixabay.com/es/vectors/dado-juegos-juego-seis-cara-26772/</em></a></figcaption>
+</figure>
+<h2>Ejercicio voluntario</h2>
+<p>Vamos a crear un programa que simule el juego de piedra, papel o tijera. Para ello, sigue los siguientes pasos:</p>
+<ul>
+<li>Crea tres iconos: uno para representar la piedra, otro para el papel y otro para la tijera</li>
+<li>Genera un número al azar</li>
+<li>Muestra un icono u otro dependiendo del número generado</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="332_sensor_de_luminosidad.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="334_brjula.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_escolares_js.js"></script></body></html>

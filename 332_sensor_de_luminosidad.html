@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.3.2. Sensor de luminosidad | Tema 3 - Micro:BIT </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Mª Dolores Robles" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-13"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 3 - Micro:BIT</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="1_qu_es_microbit.html" class="no-ch">1. Qué es Micro:BIT</a></li>
+   <li><a href="2_cmo_programamos.html" class="no-ch">2. Cómo programamos</a></li>
+   <li class="current-page-parent"><a href="3_ejemplos.html" class="current-page-parent daddy">3. Ejemplos</a>
+   <ul>
+      <li><a href="31_empezamos_el_programa.html" class="no-ch">3.1. Empezamos el programa</a></li>
+      <li><a href="32_pulsadores.html" class="no-ch">3.2. Pulsadores</a></li>
+      <li class="current-page-parent"><a href="33_sensores.html" class="current-page-parent daddy">3.3. Sensores</a>
+      <ul>
+         <li><a href="331_temperatura.html" class="no-ch">3.3.1. Temperatura</a></li>
+         <li id="active"><a href="332_sensor_de_luminosidad.html" class="active no-ch">3.3.2. Sensor de luminosidad</a></li>
+         <li><a href="333_acelermetro.html" class="no-ch">3.3.3. Acelerómetro</a></li>
+         <li><a href="334_brjula.html" class="no-ch">3.3.4. Brújula</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="331_temperatura.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="333_acelermetro.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.3.2. Sensor de luminosidad</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id16">
+<div class="iDevice emphasis0" >
+<div id="ta16_114_2" class="block iDevice_content">
+<div class="exe-text"><p>Como hemos visto anteriormente, los LEDs de la placa micro:bit se pueden usar como salida para mostrar texto e iconos. En este apartado veremos que también podemos utilizarlos como entrada, haciendo que detecten la luz ambiente.</p>
+<p>De forma similar a la temperatura, podemos acceder a una variable para ver el valor del sensor de luminosidad. En este caso, usaremos la variable nivel de luz:</p>
+<p><img src="Nivel_Luz.png" alt="Nivel de luz" style="display: block; margin-left: auto; margin-right: auto;" width="111" height="43" /></p>
+<p>Podemos mostrar directamente el nivel de luz con el siguiente código:</p>
+<p><img src="MostrarNivelLuz.png" alt="Mostrar nivel de luz" style="display: block; margin-left: auto; margin-right: auto;" width="941" height="395" /></p>
+<p></p>
+<p>Si queremos mostrar el resultado de forma gráfica usando la instrucción de graficar diagrama de barras mediante el siguiente código: </p>
+<p><img src="Grafico_Luz.png" alt="Gráfico de luz" style="display: block; margin-left: auto; margin-right: auto;" width="420" height="359" /></p>
+<p>Podemos completar el programa anterior borrando la pantalla cuando se pulsen a la vez los botones A y B:</p>
+<p><img src="BorrarPantalla.png" alt="Borrar pantalla" style="display: block; margin-left: auto; margin-right: auto;" width="302" height="152" /></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id18">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta18_116_2" class="block iDevice_content">
+<div class="pbl-task-description"><h2>Ejercicio 1</h2>
+<p>Crea un código que permita encender todos los LEDs del panel de la micro:bit al pulsar el botón A y apagarlos al pulsar el botón B. La micro:bit no debe encenderse si el valor del sensor de luz es superior a 175</p>
+<h2>Ejercicio 2</h2>
+<p>Implementa un programa que muestre un icono distinto dependiendo del nivel de luz: </p>
+<ul>
+<li>Cuando se pulse el botón B, si la luminosidad es inferior a 25, se mostrará una luna. Si es igual o superior a 25, se mostrará un sol</li>
+<li>Pasados 3 segundos, se pasará a modo de ahorro de energía (se borrará la pantalla), quedando a la espera de que se vuelva a pulsar el botón B</li>
+</ul>
+<h2>Ejercicio 3</h2>
+<p>Vamos a crear un programa de alarma de exposición al sol. Como sabéis, los dermatólogos recomiendan evitar la exposición al sol durante las horas de máxima radiación y usar cremas protectoras. En este ejercicio implementaremos un programa que avise de que estamos expuestos a un valor elevado de radiación solar. El programa hará lo siguiente:</p>
+<ul>
+<li>Cuando se pulse el botón A, si el valor es inferior a 175 (*) se mostrará el icono de la cara feliz. Si es superior o igual a 175, se mostrará la cara triste</li>
+<li>Pasados 3 segundos, se pasará a modo de ahorro de energía (se borrará la pantalla), quedando a la espera de que se vuelva a pulsar el botón A</li>
+</ul>
+<p>Nota: el valor 175 usado como umbral no tiene validez científica*</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="331_temperatura.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="333_acelermetro.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_escolares_js.js"></script></body></html>
