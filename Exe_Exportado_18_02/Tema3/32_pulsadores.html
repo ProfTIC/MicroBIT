@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.2. Pulsadores | Tema 3 - Micro:BIT </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Mª Dolores Robles" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8 Portable - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-9"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 3 - Micro:BIT</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="1_qu_es_microbit.html" class="no-ch">1. Qué es Micro:BIT</a></li>
+   <li><a href="2_cmo_programamos.html" class="no-ch">2. Cómo programamos</a></li>
+   <li class="current-page-parent"><a href="3_ejemplos.html" class="current-page-parent daddy">3. Ejemplos</a>
+   <ul>
+      <li><a href="31_empezamos_el_programa.html" class="no-ch">3.1. Empezamos el programa</a></li>
+      <li id="active"><a href="32_pulsadores.html" class="active no-ch">3.2. Pulsadores</a></li>
+      <li><a href="33_sensores.html" class="daddy">3.3. Sensores</a>
+      <ul class="other-section">
+         <li><a href="331_temperatura.html" class="no-ch">3.3.1. Temperatura</a></li>
+         <li><a href="332_sensor_de_luminosidad.html" class="no-ch">3.3.2. Sensor de luminosidad</a></li>
+         <li><a href="333_acelermetro.html" class="no-ch">3.3.3. Acelerómetro</a></li>
+         <li><a href="334_brjula.html" class="no-ch">3.3.4. Brújula</a></li>
+         <li><a href="335_radio.html" class="no-ch">3.3.5. Radio</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="31_empezamos_el_programa.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="33_sensores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.2. Pulsadores</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id11">
+<div class="iDevice emphasis0" >
+<div id="ta11_114_2" class="block iDevice_content">
+<div class="exe-text"><p>Como hemos visto en el apartado 3.1, la tarjeta micro:bit tiene dos pulsadores (etiquetados como A y B). Podemos ejecutar cualquier instrucción cuando se pulse cada botón de forma independiente o bien a la vez. Para ello, usaremos la siguiente instrucción:</p>
+<p><img src="PresionarBotonAB.png" alt="Instrucción al presionar botón A y B" style="display: block; margin-left: auto; margin-right: auto;" width="443" height="167" /></p>
+<p>Los pulsadores también se pueden programar como una condición. En este caso, necesitaríamos utilizar la instrucción condicional o si:</p>
+<p><img src="Tecla_Condicion.png" alt="Instrucción condicional simple (si)" style="display: block; margin-left: auto; margin-right: auto;" width="246" height="109" /></p>
+<p>Esta instrucción comprueba una condición y si ésta es verdadera, entonces se ejecutará el código interior. Por ejemplo, el siguiente código mostrará el texto "A" cuando se haya presionado el botón A:</p>
+<p><img src="Ejemplo_Si.png" alt="Ejemplo de instrucción si" style="display: block; margin-left: auto; margin-right: auto;" width="325" height="135" /></p>
+<p>Para que el código se ejecute es necesario incluirlo dentro de un bloque como, por ejemplo, para siempre. Veamos el ejemplo completo:</p>
+<p><img src="Ejemplo_Completo_Si.png" alt="Ejemplo completo condición" style="display: block; margin-left: auto; margin-right: auto;" width="350" height="322" /></p>
+<p>Si pruebas el programa anterior verás que cada vez que pulses el botón "A" se mostrará el texto "A" y si pulsas el botón B se mostrará "B"</p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Comprueba lo aprendido" /></div><div class="feedback js-feedback js-hidden"><p>Modifica el programa anterior para que cuando se pulse el botón A se muestre un icono y cuando se pulse B se muestre otro icono diferente. Puedes elegir el icono que quieras</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id12">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta12_115_2" class="block iDevice_content">
+<div class="pbl-task-description"><h2>Ejercicio 1 - Mostrando vuestros nombres</h2>
+<p>Crea un programa que al pulsar el botón A se muestre el nombre de uno de los componentes del grupo y al pulsar la B el nombre del otro. Si estás en un grupo de 3, el tercer nombre se mostrará cuando se pulsen las dos teclas a la vez. <strong>Usa la instrucción "al presionarse el botón..."</strong></p>
+<h2>Ejercicio 2 - Mostramos las flechas en diferentes direcciones</h2>
+<p>Crea un programa que muestre flechas indicando las diferentes direcciones (norte, nordeste...). Para ello tendrás que usar la siguiente instrucción:</p>
+<p><img src="Mostrar_Flecha.png" alt="Instrucción mostrar flecha" style="display: block; margin-left: auto; margin-right: auto;" width="228" height="289" />El programa debe hacer lo siguiente:</p>
+<ul>
+<li>Al iniciarse se debe borrar la pantalla</li>
+<li>Si pulsamos el botón A las diferentes flechas se mostrarán en el orden en el que aparecen en la imagen anterior (sentido horario, el de las agujas del reloj)</li>
+<li>Si pulsamos el botón B las diferentes flechas se mostrarán en el orden contrario (sentido antihorario, empezando por noroeste, oeste, suroeste,...)</li>
+<li>Si pulsamos simultáneamente las teclas A y B la pantalla se borrará</li>
+</ul>
+<h2>Ejercicio 3 - Programando los pulsadores como una condición</h2>
+<p>Resuelve el ejercicio 1 usando<strong> las instrucciones de condición</strong></p>
+<h2>Ejercicio 4 - Contando con Micro:BIT</h2>
+<p>En este programa vamos a crear un contador. Resuelve el problema usando <strong>las instrucciones de condición</strong></p>
+<ul>
+<li>Si se pulsa el botón A, el contador será en sentido ascendente: 0, 1, 2, 3, 4, 5, 6, 7, 8 y 9</li>
+<li>Si se pulsa el botón B, el contador será descendente: 9, 8, 7, 6, 5, 4, 3, 2, 1, 0</li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="31_empezamos_el_programa.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="33_sensores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>

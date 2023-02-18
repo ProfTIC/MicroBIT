@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.3.5. Radio | Tema 3 - Micro:BIT </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Mª Dolores Robles" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8 Portable - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-17"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 3 - Micro:BIT</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="1_qu_es_microbit.html" class="no-ch">1. Qué es Micro:BIT</a></li>
+   <li><a href="2_cmo_programamos.html" class="no-ch">2. Cómo programamos</a></li>
+   <li class="current-page-parent"><a href="3_ejemplos.html" class="current-page-parent daddy">3. Ejemplos</a>
+   <ul>
+      <li><a href="31_empezamos_el_programa.html" class="no-ch">3.1. Empezamos el programa</a></li>
+      <li><a href="32_pulsadores.html" class="no-ch">3.2. Pulsadores</a></li>
+      <li class="current-page-parent"><a href="33_sensores.html" class="current-page-parent daddy">3.3. Sensores</a>
+      <ul>
+         <li><a href="331_temperatura.html" class="no-ch">3.3.1. Temperatura</a></li>
+         <li><a href="332_sensor_de_luminosidad.html" class="no-ch">3.3.2. Sensor de luminosidad</a></li>
+         <li><a href="333_acelermetro.html" class="no-ch">3.3.3. Acelerómetro</a></li>
+         <li><a href="334_brjula.html" class="no-ch">3.3.4. Brújula</a></li>
+         <li id="active"><a href="335_radio.html" class="active no-ch">3.3.5. Radio</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="334_brjula.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.3.5. Radio</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id25">
+<div class="iDevice emphasis0" >
+<div id="ta25_120_2" class="block iDevice_content">
+<div class="exe-text"><p>La tarjeta micro:bit puede comunicarse de forma inalámbrica con otras micro:bits usando radio. Esta tecnología inalámbrica es útil para poder enviar mensajes entre distintas tarjetas y cuando no se pueda conectar el sensor con la unidad receptora de datos mediante cable. Vamos a ver qué instrucciones podemos usar para manejar la radio en la tarjeta micro:bit que, evidentemente, están en el bloque radio. Podemos clasificarlas en tres categorías:</p>
+<ul>
+<li><a href="#grupo">Grupo</a></li>
+<li><a href="#enviar">Enviar</a></li>
+<li><a href="#recibir">Recibir</a></li>
+</ul>
+<h3><a name="grupo"></a>Grupo</h3>
+<p>Al igual que es posible cambiar el canal de emisión de un router, podemos elegir en qué grupo queremos comunicarnos entre las micro:bit. Para ello, usaremos la siguiente instrucción:</p>
+<p></p>
+<p><img src="GrupoRadio.png" alt="Instrucciones del grupo radio" style="display: block; margin-left: auto; margin-right: auto;" width="414" height="226" /></p>
+<p>El valor del ID de grupo puede ser un número entre 0 y 255. Cuando establecemos, por ejemplo, el grupo de radio a 2, estamos diciendo que vamos a poder recibir señales de todas las micro:bit que estén emitiendo en el grupo 2. Usaremos el siguiente bloque de instrucciones:</p>
+<p><img src="EstablecerRadioInicio.png" alt="Instrucciones para establecer el grupo de radio" style="display: block; margin-left: auto; margin-right: auto;" width="360" height="180" /></p>
+<p>Puedes pensar en el ID de grupo como en un número de teléfono que hay que marcar para poder comunicarse con otra tarjeta. En este caso, el número es solo un valor entre 0 y 255</p>
+<h3><a name="enviar"></a>Enviar</h3>
+<p>Este bloque de instrucciones permitirá enviar alguna información de una tarjeta micro:bit a otra:</p>
+<p><img src="RadioEnviar.png" alt="Instrucciones para enviar la radio" style="display: block; margin-left: auto; margin-right: auto;" width="302" height="262" /></p>
+<p>Ten en cuenta que se debe haber establecido previamente el ID del grupo para que las dos tarjetas estén en el mismo grupo y puedan escucharse mutuamente. Tenemos tres valores posibles que enviar:</p>
+<ul>
+<li>Un número</li>
+<li>El valor de una variable (name será el nombre de la variable y 0 se cambiará por el valor que se quiera asignar)</li>
+<li>Un texto (o cadena de caracteres)</li>
+</ul>
+<p>Estas instrucciones deberán ir dentro de otro bloque. Por ejemplo, el siguiente código envía el número 20 a otra micro:bit cuando se pulsa el botón A. Ten en cuenta que en las dos tarjetas se ha establecido como ID de grupo el 2:</p>
+<p><img src="EjemploEnviar.png" alt="Ejemplo de enviar radio" style="display: block; margin-left: auto; margin-right: auto;" width="531" height="175" /></p>
+<h3><a name="recibir"></a>Recibir</h3>
+<p>En cualquier proceso de comunicación hay un emisor y un receptor. Si anteriormente hemos visto cómo enviar un mensaje, ahora vamos a ver qué instrucciones podemos usar para recibirlo:</p>
+<p><img src="RadioRecibir.png" alt="Radio recibir instrucciones" style="display: block; margin-left: auto; margin-right: auto;" width="314" height="422" /></p>
+<p>Si nos fijamos, existe una instrucción de recepción para cada instrucción de envío. Así, la primera instrucción de la imagen permitirá recibir un número, la segunda el nombre de una variable y su valor mientras que la tercera permitirá recibir un texto o cadena de caracteres.</p>
+<p>Siguiendo con el ejemplo anterior, vamos a ver qué instrucciones necesitaríamos para recibir el número 0 que hemos enviado anteriormente:</p>
+<p><img src="ProgramaRecibir.png" alt="Programa instrucciones recibir radio - ejemplo" style="display: block; margin-left: auto; margin-right: auto;" width="605" height="161" /></p>
+<p>En este caso, la tarjeta mostrará el número que se le ha enviado previamente</p>
+<p>Además de los números, del texto y del par (variable, valor) podemos obtener información adicional del paquete recibido (intensidad de señal, la hora o el número de serie). Para ello, usaremos la siguiente instrucción:</p>
+<p><img src="DatosPaqueteRecibido.png" alt="Instrucción para saber los datos del paquete recibido" style="display: block; margin-left: auto; margin-right: auto;" width="296" height="146" /></p>
+<p>Si pulsas en el botón más del bloque radio, aparecen otras instrucciones más avanzadas para el manejo de la radio:</p>
+<p><img src="OtrasInstruccionesRadio.png" alt="Instrucciones avanzadas radio" style="display: block; margin-left: auto; margin-right: auto;" width="493" height="371" /></p>
+<p>De momento, estas instrucciones no las usaremos. Las veremos en cursos posteriores</p>
+<p></p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Comprueba lo aprendido" /></div><div class="feedback js-feedback js-hidden"><p>La página de MakeCode permite simular la comunicación por radio entre dos tarjetas micro:bit. Para ello, solo hay que incluir todas las instrucciones en el panel de bloques. Prueba el siguiente ejemplo:</p>
+<p><img src="EjemploProgramaRadioCompleto.png" alt="Ejemplo programa radio completo" style="display: block; margin-left: auto; margin-right: auto;" width="703" height="310" /></p>
+<p>Responde a las siguientes preguntas:</p>
+<ul>
+<li>¿Qué hace el programa?</li>
+<li>Cambia el grupo de comunicación de las tarjetas a 6</li>
+<li>Modifica el programa para que se muestre un icono de frío si la temperatura es inferior a 20, y un icono para el color si es superior o igual a 20</li>
+</ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id27">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta27_122_2" class="block iDevice_content">
+<div class="pbl-task-description"><h2>Ejercicio 1</h2>
+<p>En este programa trabaremos juntos dos equipos. Se trata de crear un pato que viajará mágicamente a través del aire de una tarjeta micro:bit a otra. Para enviarlo de vuelta, solo habrá que agitarlo.</p>
+<p>Se deben seguir los siguientes pasos:</p>
+<ul>
+<li>La profesora os indicará qué dos grupos trabajaréis juntos</li>
+<li>Cada uno de los grupos creará su propio programa. En ambos se deberá establecer el mismo grupo de radio (os lo asignará vuestra profesora)</li>
+<li>El programa se iniciará cuando la tarjeta micro:bit se agite. En ese momento, se borrará la pantalla y se enviará un mensaje con la palabra "pato" a la otra tarjeta</li>
+<li>Cuando la otra tarjeta reciba el mensaje, mostrará el icono del pato</li>
+</ul>
+<h2>Voluntario</h2>
+<p>Crearemos un programa en el que se enviarán preguntas de una tarjeta micro:bit a otra, a las que se responderá con sí o no. Procedimiento:</p>
+<ul>
+<li>Establecer el mismo grupo de comunicación para los dos equipos</li>
+<li>Implementa las instrucciones necesarias para que al pulsar el botón A se envía "sí" y al pulsar el botón B se envíe "no". Justo después de la instrucción de enviar, se mostrará el icono de acierto o de fallo, pararemos medio segundo (500ms) y se borrará la pantalla</li>
+<li>Cuando se reciba el mensaje, la tarjeta mostrará el icono correspondiente al sí (un aspa) si se ha recibido ese mensaje o el del no (una cruz), si se ha recibido un mensaje "no". El icono se mostrará medio segundo y después se borrará la pantalla</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="334_brjula.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
