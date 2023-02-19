@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.3.6. Pines de entrada y salida | Tema 3 - Micro:BIT </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Mª Dolores Robles" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8 Portable - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-18"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 3 - Micro:BIT</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="1_qu_es_microbit.html" class="no-ch">1. Qué es Micro:BIT</a></li>
+   <li><a href="2_cmo_programamos.html" class="no-ch">2. Cómo programamos</a></li>
+   <li class="current-page-parent"><a href="3_ejemplos.html" class="current-page-parent daddy">3. Ejemplos</a>
+   <ul>
+      <li><a href="31_empezamos_el_programa.html" class="no-ch">3.1. Empezamos el programa</a></li>
+      <li><a href="32_pulsadores.html" class="no-ch">3.2. Pulsadores</a></li>
+      <li class="current-page-parent"><a href="33_sensores.html" class="current-page-parent daddy">3.3. Sensores</a>
+      <ul>
+         <li><a href="331_temperatura.html" class="no-ch">3.3.1. Temperatura</a></li>
+         <li><a href="332_sensor_de_luminosidad.html" class="no-ch">3.3.2. Sensor de luminosidad</a></li>
+         <li><a href="333_acelermetro.html" class="no-ch">3.3.3. Acelerómetro</a></li>
+         <li><a href="334_brjula.html" class="no-ch">3.3.4. Brújula</a></li>
+         <li><a href="335_radio.html" class="no-ch">3.3.5. Radio</a></li>
+         <li id="active"><a href="336_pines_de_entrada_y_salida.html" class="active no-ch">3.3.6. Pines de entrada y salida</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="335_radio.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.3.6. Pines de entrada y salida</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id28">
+<div class="iDevice emphasis0" >
+<div id="ta28_120_2" class="block iDevice_content">
+<div class="exe-text"><p>La tarjeta micro:bit dispone de 25 conectores situados en el borde inferior, a través de los cuales se pueden programar motores, LEDs o cualquier otro componente o sensor externo. Los pines se pueden manejar usando pinzas de cocodrilo</p>
+<p><img src="Pines.png" alt="Conectores de la tarjeta micro:bit" style="display: block; margin-left: auto; margin-right: auto;" width="384" height="318" /></p>
+<p>Comenzamos con el manejo de los pines 0, 1 y 2. Estos pines son flexibles y tienen diferentes aplicaciones. Por eso los llamamos de propósito general de entrada salida (o con las siglas GPIO,<em> general purpose input and output</em>). Con estos tres pines se pueden leer los valores de los voltajes analógicos y podemos usarlos como conversores analógicos-digitales (ADC,<em> analog-to-digital converter</em>).</p>
+<p>Vamos a ver algunos ejemplos de uso </p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id29">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea - ¿Hay continuidad?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta29_121_2" class="block iDevice_content">
+<div class="pbl-task-description"><p>En algunas ocasiones interesa conocer si un cable tiene continuidad en toda su longitud. Para comprobar la continuidad se suele usar un multímetro que mide la resistencia del conductor. Cuando acabes esta tarea habrás creado un programa que te permitirá saber si un material es o no conductor de la electricidad.</p>
+<p><img src="microbit-ConductorPines.png" alt="Programa microbit conductor" style="display: block; margin-left: auto; margin-right: auto;" width="395" height="331" /></p>
+<p>Ahora usaremos dos pinzas de cocodrilo para comprobar la conectividad: una irá al pin 0 y otra al pin GND. Lo primero será comprobar que el programa funciona correctamente. Para ello, unimos las dos pinzas y veremos cómo en la micro:bit se muestra el aspa (hay conducción eléctrica). Prueba ahora con otros materiales para ver si son conductores o aislantes. Haz una lista con cinco materiales, indicando si son conductores o aislantes. Al menos debe haber un ejemplo de cada tipo</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="335_radio.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
