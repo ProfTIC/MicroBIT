@@ -2633,6 +2633,7 @@
 &lt;li&gt;&lt;a href=&quot;exe-node:Inicio:3.%20Ejemplos:3.3.%20Sensores:3.3.3.%20Aceler%C3%B3metro#auto_top&quot;&gt;Acelerómetro&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;exe-node:Inicio:3.%20Ejemplos:3.3.%20Sensores:3.3.4.%20Br%C3%BAjula#auto_top&quot;&gt;Brújula&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;exe-node:Inicio:3.%20Ejemplos:3.3.%20Sensores:3.3.5.%20Radio#auto_top&quot;&gt;Radio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;exe-node:Inicio:3.%20Ejemplos:3.3.%20Sensores:3.3.6.%20Pines%20de%20entrada%20y%20salida#auto_top&quot;&gt;Pines de entrada y salida&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;"></unicode>
                  <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
                  <int value="4"></int>
@@ -5751,6 +5752,401 @@
                     <list></list>
                    </dictionary>
                   </instance>
+                  <unicode role="key" value="exe-node:Inicio:3.%20Ejemplos:3.3.%20Sensores:3.3.6.%20Pines%20de%20entrada%20y%20salida#auto_top"></unicode>
+                  <instance class="exe.engine.node.Node" reference="103">
+                   <dictionary>
+                    <string role="key" value="_title"></string>
+                    <unicode value="3.3.6. Pines de entrada y salida"></unicode>
+                    <string role="key" value="idevices"></string>
+                    <list>
+                     <instance class="exe.engine.jsidevice.JsIdevice" reference="101">
+                      <dictionary>
+                       <string role="key" value="_title"></string>
+                       <unicode value=""></unicode>
+                       <string role="key" value="_attributes"></string>
+                       <list>
+                        <tuple>
+                         <string value="title"></string>
+                         <list>
+                          <string value="Title"></string>
+                          <int value="0"></int>
+                          <int value="0"></int>
+                         </list>
+                        </tuple>
+                        <tuple>
+                         <string value="category"></string>
+                         <list>
+                          <string value="Category"></string>
+                          <int value="0"></int>
+                          <int value="1"></int>
+                         </list>
+                        </tuple>
+                        <tuple>
+                         <string value="css-class"></string>
+                         <list>
+                          <string value="CSS class"></string>
+                          <int value="0"></int>
+                          <int value="2"></int>
+                         </list>
+                        </tuple>
+                        <tuple>
+                         <string value="icon"></string>
+                         <list>
+                          <string value="Icon"></string>
+                          <int value="0"></int>
+                          <int value="3"></int>
+                         </list>
+                        </tuple>
+                       </list>
+                       <string role="key" value="_author"></string>
+                       <string value=""></string>
+                       <string role="key" value="_iDeviceDir"></string>
+                       <string value="text"></string>
+                       <string role="key" value="_purpose"></string>
+                       <string value=""></string>
+                       <string role="key" value="_tip"></string>
+                       <string value=""></string>
+                       <string role="key" value="_typeName"></string>
+                       <unicode value="Text"></unicode>
+                       <string role="key" value="_valid"></string>
+                       <bool value="1"></bool>
+                       <string role="key" value="class_"></string>
+                       <unicode value="text"></unicode>
+                       <string role="key" value="edit"></string>
+                       <bool value="0"></bool>
+                       <string role="key" value="emphasis"></string>
+                       <int value="0"></int>
+                       <string role="key" value="exe.engine.jsidevice.JsIdevice.persistenceVersion"></string>
+                       <int value="1"></int>
+                       <string role="key" value="fields"></string>
+                       <list>
+                        <instance class="exe.engine.field.TextAreaField" reference="102">
+                         <dictionary>
+                          <string role="key" value="_id"></string>
+                          <unicode value="120_2"></unicode>
+                          <string role="key" value="_idevice"></string>
+                          <reference key="101"></reference>
+                          <string role="key" value="_instruc"></string>
+                          <string value=""></string>
+                          <string role="key" value="_name"></string>
+                          <string value=""></string>
+                          <string role="key" value="anchor_names"></string>
+                          <list></list>
+                          <string role="key" value="content_w_resourcePaths"></string>
+                          <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;La tarjeta micro:bit dispone de 25 conectores situados en el borde inferior, a través de los cuales se pueden programar motores, LEDs o cualquier otro componente o sensor externo. Los pines se pueden manejar usando pinzas de cocodrilo&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;resources/Pines.png&quot; alt=&quot;Conectores de la tarjeta micro:bit&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; width=&quot;384&quot; height=&quot;318&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Comenzamos con el manejo de los pines 0, 1 y 2. Estos pines son flexibles y tienen diferentes aplicaciones. Por eso los llamamos de propósito general de entrada salida (o con las siglas GPIO,&lt;em&gt; general purpose input and output&lt;/em&gt;). Con estos tres pines se pueden leer los valores de los voltajes analógicos y podemos usarlos como conversores analógicos-digitales (ADC,&lt;em&gt; analog-to-digital converter&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;Vamos a ver algunos ejemplos de uso &lt;/p&gt;&lt;/div&gt;"></unicode>
+                          <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
+                          <int value="4"></int>
+                          <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
+                          <int value="2"></int>
+                          <string role="key" value="exe.engine.field.TextAreaField.persistenceVersion"></string>
+                          <int value="3"></int>
+                          <string role="key" value="htmlTag"></string>
+                          <string value="div"></string>
+                          <string role="key" value="images"></string>
+                          <instance class="exe.engine.galleryidevice.GalleryImages">
+                           <dictionary>
+                            <string role="key" value=".listitems"></string>
+                            <list>
+                             <instance class="exe.engine.galleryidevice.GalleryImage">
+                              <dictionary>
+                               <string role="key" value="_caption"></string>
+                               <instance class="exe.engine.field.TextField">
+                                <dictionary>
+                                 <string role="key" value="_id"></string>
+                                 <int value="501"></int>
+                                 <string role="key" value="_idevice"></string>
+                                 <none></none>
+                                 <string role="key" value="_instruc"></string>
+                                 <string value=""></string>
+                                 <string role="key" value="_name"></string>
+                                 <string value=""></string>
+                                 <string role="key" value="content"></string>
+                                 <string value=""></string>
+                                 <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
+                                 <int value="4"></int>
+                                </dictionary>
+                               </instance>
+                               <string role="key" value="_id"></string>
+                               <unicode value="28_120_2.0"></unicode>
+                               <string role="key" value="_imageResource"></string>
+                               <instance class="exe.engine.resource.Resource" reference="104">
+                                <dictionary>
+                                 <string role="key" value="_idevice"></string>
+                                 <reference key="101"></reference>
+                                 <string role="key" value="_package"></string>
+                                 <reference key="4"></reference>
+                                 <string role="key" value="_storageName"></string>
+                                 <string value="Pines.png"></string>
+                                 <string role="key" value="_userName"></string>
+                                 <string value="/tmp/tmpl7_DYA.eXe/previews/allyourbase/Pines.png"></string>
+                                 <string role="key" value="checksum"></string>
+                                 <string value="14f1c3b1c430dd0b84f65edfe3c82094"></string>
+                                 <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
+                                 <int value="2"></int>
+                                 <string role="key" value="exe.engine.resource._Resource.persistenceVersion"></string>
+                                 <int value="2"></int>
+                                 <string role="key" value="warningMsg"></string>
+                                 <string value=""></string>
+                                </dictionary>
+                               </instance>
+                               <string role="key" value="_parent"></string>
+                               <reference key="102"></reference>
+                               <string role="key" value="_thumbnailResource"></string>
+                               <none></none>
+                               <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
+                               <int value="3"></int>
+                               <string role="key" value="makeThumbnail"></string>
+                               <bool value="0"></bool>
+                              </dictionary>
+                             </instance>
+                            </list>
+                            <string role="key" value="idevice"></string>
+                            <reference key="102"></reference>
+                           </dictionary>
+                          </instance>
+                          <string role="key" value="intlinks_to_anchors"></string>
+                          <dictionary></dictionary>
+                          <string role="key" value="nextImageId"></string>
+                          <int value="1"></int>
+                          <string role="key" value="parentNode"></string>
+                          <reference key="103"></reference>
+                         </dictionary>
+                        </instance>
+                       </list>
+                       <string role="key" value="icon"></string>
+                       <unicode value=""></unicode>
+                       <string role="key" value="id"></string>
+                       <unicode value="28"></unicode>
+                       <string role="key" value="ideviceCategory"></string>
+                       <unicode value="Text and Tasks"></unicode>
+                       <string role="key" value="lastIdevice"></string>
+                       <bool value="0"></bool>
+                       <string role="key" value="nextFieldId"></string>
+                       <int value="3"></int>
+                       <string role="key" value="originalicon"></string>
+                       <string value=""></string>
+                       <string role="key" value="parentNode"></string>
+                       <reference key="103"></reference>
+                       <string role="key" value="systemResources"></string>
+                       <list></list>
+                       <string role="key" value="undo"></string>
+                       <bool value="1"></bool>
+                       <string role="key" value="userResources"></string>
+                       <list>
+                        <reference key="104"></reference>
+                       </list>
+                       <string role="key" value="version"></string>
+                       <int value="0"></int>
+                      </dictionary>
+                     </instance>
+                     <instance class="exe.engine.jsidevice.JsIdevice" reference="105">
+                      <dictionary>
+                       <string role="key" value="_title"></string>
+                       <unicode value="Tarea - ¿Hay continuidad?"></unicode>
+                       <string role="key" value="_attributes"></string>
+                       <list>
+                        <tuple>
+                         <string value="title"></string>
+                         <list>
+                          <string value="Title"></string>
+                          <int value="0"></int>
+                          <int value="0"></int>
+                         </list>
+                        </tuple>
+                        <tuple>
+                         <string value="category"></string>
+                         <list>
+                          <string value="Category"></string>
+                          <int value="0"></int>
+                          <int value="1"></int>
+                         </list>
+                        </tuple>
+                        <tuple>
+                         <string value="css-class"></string>
+                         <list>
+                          <string value="CSS class"></string>
+                          <int value="0"></int>
+                          <int value="2"></int>
+                         </list>
+                        </tuple>
+                        <tuple>
+                         <string value="icon"></string>
+                         <list>
+                          <string value="Icon"></string>
+                          <int value="0"></int>
+                          <int value="3"></int>
+                         </list>
+                        </tuple>
+                       </list>
+                       <string role="key" value="_author"></string>
+                       <string value=""></string>
+                       <string role="key" value="_iDeviceDir"></string>
+                       <string value="pbl-tools"></string>
+                       <string role="key" value="_purpose"></string>
+                       <string value=""></string>
+                       <string role="key" value="_tip"></string>
+                       <string value=""></string>
+                       <string role="key" value="_typeName"></string>
+                       <unicode value="Task"></unicode>
+                       <string role="key" value="_valid"></string>
+                       <bool value="1"></bool>
+                       <string role="key" value="class_"></string>
+                       <unicode value="pbl"></unicode>
+                       <string role="key" value="edit"></string>
+                       <bool value="0"></bool>
+                       <string role="key" value="emphasis"></string>
+                       <int value="1"></int>
+                       <string role="key" value="exe.engine.jsidevice.JsIdevice.persistenceVersion"></string>
+                       <int value="1"></int>
+                       <string role="key" value="fields"></string>
+                       <list>
+                        <instance class="exe.engine.field.TextAreaField" reference="106">
+                         <dictionary>
+                          <string role="key" value="_id"></string>
+                          <unicode value="121_2"></unicode>
+                          <string role="key" value="_idevice"></string>
+                          <reference key="105"></reference>
+                          <string role="key" value="_instruc"></string>
+                          <string value=""></string>
+                          <string role="key" value="_name"></string>
+                          <string value=""></string>
+                          <string role="key" value="anchor_names"></string>
+                          <list></list>
+                          <string role="key" value="content_w_resourcePaths"></string>
+                          <unicode content="true" value="&lt;div class=&quot;pbl-task-description&quot;&gt;&lt;p&gt;En algunas ocasiones interesa conocer si un cable tiene continuidad en toda su longitud. Para comprobar la continuidad se suele usar un multímetro que mide la resistencia del conductor. Cuando acabes esta tarea habrás creado un programa que te permitirá saber si un material es o no conductor de la electricidad.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;resources/microbit-ConductorPines.png&quot; alt=&quot;Programa microbit conductor&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; width=&quot;395&quot; height=&quot;331&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Ahora usaremos dos pinzas de cocodrilo para comprobar la conectividad: una irá al pin 0 y otra al pin GND. Lo primero será comprobar que el programa funciona correctamente. Para ello, unimos las dos pinzas y veremos cómo en la micro:bit se muestra el aspa (hay conducción eléctrica). Prueba ahora con otros materiales para ver si son conductores o aislantes. Haz una lista con cinco materiales, indicando si son conductores o aislantes. Al menos debe haber un ejemplo de cada tipo&lt;/p&gt;&lt;/div&gt;"></unicode>
+                          <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
+                          <int value="4"></int>
+                          <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
+                          <int value="2"></int>
+                          <string role="key" value="exe.engine.field.TextAreaField.persistenceVersion"></string>
+                          <int value="3"></int>
+                          <string role="key" value="htmlTag"></string>
+                          <string value="div"></string>
+                          <string role="key" value="images"></string>
+                          <instance class="exe.engine.galleryidevice.GalleryImages">
+                           <dictionary>
+                            <string role="key" value=".listitems"></string>
+                            <list>
+                             <instance class="exe.engine.galleryidevice.GalleryImage">
+                              <dictionary>
+                               <string role="key" value="_caption"></string>
+                               <instance class="exe.engine.field.TextField">
+                                <dictionary>
+                                 <string role="key" value="_id"></string>
+                                 <int value="502"></int>
+                                 <string role="key" value="_idevice"></string>
+                                 <none></none>
+                                 <string role="key" value="_instruc"></string>
+                                 <string value=""></string>
+                                 <string role="key" value="_name"></string>
+                                 <string value=""></string>
+                                 <string role="key" value="content"></string>
+                                 <string value=""></string>
+                                 <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
+                                 <int value="4"></int>
+                                </dictionary>
+                               </instance>
+                               <string role="key" value="_id"></string>
+                               <unicode value="29_121_2.0"></unicode>
+                               <string role="key" value="_imageResource"></string>
+                               <instance class="exe.engine.resource.Resource" reference="107">
+                                <dictionary>
+                                 <string role="key" value="_idevice"></string>
+                                 <reference key="105"></reference>
+                                 <string role="key" value="_package"></string>
+                                 <reference key="4"></reference>
+                                 <string role="key" value="_storageName"></string>
+                                 <string value="microbit-ConductorPines.png"></string>
+                                 <string role="key" value="_userName"></string>
+                                 <string value="/tmp/tmpl7_DYA.eXe/previews/allyourbase/microbit-ConductorPines.png"></string>
+                                 <string role="key" value="checksum"></string>
+                                 <string value="e6a505883d8a7d15b3680d8e9c54ab09"></string>
+                                 <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
+                                 <int value="2"></int>
+                                 <string role="key" value="exe.engine.resource._Resource.persistenceVersion"></string>
+                                 <int value="2"></int>
+                                 <string role="key" value="warningMsg"></string>
+                                 <string value=""></string>
+                                </dictionary>
+                               </instance>
+                               <string role="key" value="_parent"></string>
+                               <reference key="106"></reference>
+                               <string role="key" value="_thumbnailResource"></string>
+                               <none></none>
+                               <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
+                               <int value="3"></int>
+                               <string role="key" value="makeThumbnail"></string>
+                               <bool value="0"></bool>
+                              </dictionary>
+                             </instance>
+                            </list>
+                            <string role="key" value="idevice"></string>
+                            <reference key="106"></reference>
+                           </dictionary>
+                          </instance>
+                          <string role="key" value="intlinks_to_anchors"></string>
+                          <dictionary></dictionary>
+                          <string role="key" value="nextImageId"></string>
+                          <int value="1"></int>
+                          <string role="key" value="parentNode"></string>
+                          <reference key="103"></reference>
+                         </dictionary>
+                        </instance>
+                       </list>
+                       <string role="key" value="icon"></string>
+                       <unicode value="activity"></unicode>
+                       <string role="key" value="id"></string>
+                       <unicode value="29"></unicode>
+                       <string role="key" value="ideviceCategory"></string>
+                       <unicode value="Text and Tasks"></unicode>
+                       <string role="key" value="lastIdevice"></string>
+                       <bool value="0"></bool>
+                       <string role="key" value="nextFieldId"></string>
+                       <int value="3"></int>
+                       <string role="key" value="originalicon"></string>
+                       <unicode value="activity"></unicode>
+                       <string role="key" value="parentNode"></string>
+                       <reference key="103"></reference>
+                       <string role="key" value="systemResources"></string>
+                       <list></list>
+                       <string role="key" value="undo"></string>
+                       <bool value="1"></bool>
+                       <string role="key" value="userResources"></string>
+                       <list>
+                        <reference key="107"></reference>
+                       </list>
+                       <string role="key" value="version"></string>
+                       <int value="0"></int>
+                      </dictionary>
+                     </instance>
+                    </list>
+                    <string role="key" value="_id"></string>
+                    <unicode value="18"></unicode>
+                    <string role="key" value="_package"></string>
+                    <reference key="4"></reference>
+                    <string role="key" value="anchor_fields"></string>
+                    <list></list>
+                    <string role="key" value="exe.engine.node.Node.persistenceVersion"></string>
+                    <int value="2"></int>
+                    <string role="key" value="exportType"></string>
+                    <string value="website"></string>
+                    <string role="key" value="last_full_node_path"></string>
+                    <string value="exe-node:Inicio:3.%20Ejemplos:3.3.%20Sensores:3.3.6.%20Pines%20de%20entrada%20y%20salida"></string>
+                    <string role="key" value="parent"></string>
+                    <reference key="56"></reference>
+                    <string role="key" value="top_anchors_linked_from_fields"></string>
+                    <list>
+                     <reference key="46"></reference>
+                    </list>
+                    <string role="key" value="children"></string>
+                    <list></list>
+                   </dictionary>
+                  </instance>
                  </dictionary>
                  <string role="key" value="nextImageId"></string>
                  <int value="0"></int>
@@ -5807,398 +6203,7 @@
             <reference key="68"></reference>
             <reference key="82"></reference>
             <reference key="89"></reference>
-            <instance class="exe.engine.node.Node" reference="103">
-             <dictionary>
-              <string role="key" value="_title"></string>
-              <unicode value="3.3.6. Pines de entrada y salida"></unicode>
-              <string role="key" value="idevices"></string>
-              <list>
-               <instance class="exe.engine.jsidevice.JsIdevice" reference="101">
-                <dictionary>
-                 <string role="key" value="_title"></string>
-                 <unicode value=""></unicode>
-                 <string role="key" value="_attributes"></string>
-                 <list>
-                  <tuple>
-                   <string value="title"></string>
-                   <list>
-                    <string value="Title"></string>
-                    <int value="0"></int>
-                    <int value="0"></int>
-                   </list>
-                  </tuple>
-                  <tuple>
-                   <string value="category"></string>
-                   <list>
-                    <string value="Category"></string>
-                    <int value="0"></int>
-                    <int value="1"></int>
-                   </list>
-                  </tuple>
-                  <tuple>
-                   <string value="css-class"></string>
-                   <list>
-                    <string value="CSS class"></string>
-                    <int value="0"></int>
-                    <int value="2"></int>
-                   </list>
-                  </tuple>
-                  <tuple>
-                   <string value="icon"></string>
-                   <list>
-                    <string value="Icon"></string>
-                    <int value="0"></int>
-                    <int value="3"></int>
-                   </list>
-                  </tuple>
-                 </list>
-                 <string role="key" value="_author"></string>
-                 <string value=""></string>
-                 <string role="key" value="_iDeviceDir"></string>
-                 <string value="text"></string>
-                 <string role="key" value="_purpose"></string>
-                 <string value=""></string>
-                 <string role="key" value="_tip"></string>
-                 <string value=""></string>
-                 <string role="key" value="_typeName"></string>
-                 <unicode value="Text"></unicode>
-                 <string role="key" value="_valid"></string>
-                 <bool value="1"></bool>
-                 <string role="key" value="class_"></string>
-                 <unicode value="text"></unicode>
-                 <string role="key" value="edit"></string>
-                 <bool value="0"></bool>
-                 <string role="key" value="emphasis"></string>
-                 <int value="0"></int>
-                 <string role="key" value="exe.engine.jsidevice.JsIdevice.persistenceVersion"></string>
-                 <int value="1"></int>
-                 <string role="key" value="fields"></string>
-                 <list>
-                  <instance class="exe.engine.field.TextAreaField" reference="102">
-                   <dictionary>
-                    <string role="key" value="_id"></string>
-                    <unicode value="120_2"></unicode>
-                    <string role="key" value="_idevice"></string>
-                    <reference key="101"></reference>
-                    <string role="key" value="_instruc"></string>
-                    <string value=""></string>
-                    <string role="key" value="_name"></string>
-                    <string value=""></string>
-                    <string role="key" value="anchor_names"></string>
-                    <list></list>
-                    <string role="key" value="content_w_resourcePaths"></string>
-                    <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;La tarjeta micro:bit dispone de 25 conectores situados en el borde inferior, a través de los cuales se pueden programar motores, LEDs o cualquier otro componente o sensor externo. Los pines se pueden manejar usando pinzas de cocodrilo&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;resources/Pines.png&quot; alt=&quot;Conectores de la tarjeta micro:bit&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; width=&quot;384&quot; height=&quot;318&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Comenzamos con el manejo de los pines 0, 1 y 2. Estos pines son flexibles y tienen diferentes aplicaciones. Por eso los llamamos de propósito general de entrada salida (o con las siglas GPIO,&lt;em&gt; general purpose input and output&lt;/em&gt;). Con estos tres pines se pueden leer los valores de los voltajes analógicos y podemos usarlos como conversores analógicos-digitales (ADC,&lt;em&gt; analog-to-digital converter&lt;/em&gt;).&lt;/p&gt;
-&lt;p&gt;Vamos a ver algunos ejemplos de uso &lt;/p&gt;&lt;/div&gt;"></unicode>
-                    <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
-                    <int value="4"></int>
-                    <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
-                    <int value="2"></int>
-                    <string role="key" value="exe.engine.field.TextAreaField.persistenceVersion"></string>
-                    <int value="3"></int>
-                    <string role="key" value="htmlTag"></string>
-                    <string value="div"></string>
-                    <string role="key" value="images"></string>
-                    <instance class="exe.engine.galleryidevice.GalleryImages">
-                     <dictionary>
-                      <string role="key" value=".listitems"></string>
-                      <list>
-                       <instance class="exe.engine.galleryidevice.GalleryImage">
-                        <dictionary>
-                         <string role="key" value="_caption"></string>
-                         <instance class="exe.engine.field.TextField">
-                          <dictionary>
-                           <string role="key" value="_id"></string>
-                           <int value="501"></int>
-                           <string role="key" value="_idevice"></string>
-                           <none></none>
-                           <string role="key" value="_instruc"></string>
-                           <string value=""></string>
-                           <string role="key" value="_name"></string>
-                           <string value=""></string>
-                           <string role="key" value="content"></string>
-                           <string value=""></string>
-                           <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
-                           <int value="4"></int>
-                          </dictionary>
-                         </instance>
-                         <string role="key" value="_id"></string>
-                         <unicode value="28_120_2.0"></unicode>
-                         <string role="key" value="_imageResource"></string>
-                         <instance class="exe.engine.resource.Resource" reference="104">
-                          <dictionary>
-                           <string role="key" value="_idevice"></string>
-                           <reference key="101"></reference>
-                           <string role="key" value="_package"></string>
-                           <reference key="4"></reference>
-                           <string role="key" value="_storageName"></string>
-                           <string value="Pines.png"></string>
-                           <string role="key" value="_userName"></string>
-                           <string value="/tmp/tmpl7_DYA.eXe/previews/allyourbase/Pines.png"></string>
-                           <string role="key" value="checksum"></string>
-                           <string value="14f1c3b1c430dd0b84f65edfe3c82094"></string>
-                           <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
-                           <int value="2"></int>
-                           <string role="key" value="exe.engine.resource._Resource.persistenceVersion"></string>
-                           <int value="2"></int>
-                           <string role="key" value="warningMsg"></string>
-                           <string value=""></string>
-                          </dictionary>
-                         </instance>
-                         <string role="key" value="_parent"></string>
-                         <reference key="102"></reference>
-                         <string role="key" value="_thumbnailResource"></string>
-                         <none></none>
-                         <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
-                         <int value="3"></int>
-                         <string role="key" value="makeThumbnail"></string>
-                         <bool value="0"></bool>
-                        </dictionary>
-                       </instance>
-                      </list>
-                      <string role="key" value="idevice"></string>
-                      <reference key="102"></reference>
-                     </dictionary>
-                    </instance>
-                    <string role="key" value="intlinks_to_anchors"></string>
-                    <dictionary></dictionary>
-                    <string role="key" value="nextImageId"></string>
-                    <int value="1"></int>
-                    <string role="key" value="parentNode"></string>
-                    <reference key="103"></reference>
-                   </dictionary>
-                  </instance>
-                 </list>
-                 <string role="key" value="icon"></string>
-                 <unicode value=""></unicode>
-                 <string role="key" value="id"></string>
-                 <unicode value="28"></unicode>
-                 <string role="key" value="ideviceCategory"></string>
-                 <unicode value="Text and Tasks"></unicode>
-                 <string role="key" value="lastIdevice"></string>
-                 <bool value="0"></bool>
-                 <string role="key" value="nextFieldId"></string>
-                 <int value="3"></int>
-                 <string role="key" value="originalicon"></string>
-                 <string value=""></string>
-                 <string role="key" value="parentNode"></string>
-                 <reference key="103"></reference>
-                 <string role="key" value="systemResources"></string>
-                 <list></list>
-                 <string role="key" value="undo"></string>
-                 <bool value="1"></bool>
-                 <string role="key" value="userResources"></string>
-                 <list>
-                  <reference key="104"></reference>
-                 </list>
-                 <string role="key" value="version"></string>
-                 <int value="0"></int>
-                </dictionary>
-               </instance>
-               <instance class="exe.engine.jsidevice.JsIdevice" reference="105">
-                <dictionary>
-                 <string role="key" value="_title"></string>
-                 <unicode value="Tarea - ¿Hay continuidad?"></unicode>
-                 <string role="key" value="_attributes"></string>
-                 <list>
-                  <tuple>
-                   <string value="title"></string>
-                   <list>
-                    <string value="Title"></string>
-                    <int value="0"></int>
-                    <int value="0"></int>
-                   </list>
-                  </tuple>
-                  <tuple>
-                   <string value="category"></string>
-                   <list>
-                    <string value="Category"></string>
-                    <int value="0"></int>
-                    <int value="1"></int>
-                   </list>
-                  </tuple>
-                  <tuple>
-                   <string value="css-class"></string>
-                   <list>
-                    <string value="CSS class"></string>
-                    <int value="0"></int>
-                    <int value="2"></int>
-                   </list>
-                  </tuple>
-                  <tuple>
-                   <string value="icon"></string>
-                   <list>
-                    <string value="Icon"></string>
-                    <int value="0"></int>
-                    <int value="3"></int>
-                   </list>
-                  </tuple>
-                 </list>
-                 <string role="key" value="_author"></string>
-                 <string value=""></string>
-                 <string role="key" value="_iDeviceDir"></string>
-                 <string value="pbl-tools"></string>
-                 <string role="key" value="_purpose"></string>
-                 <string value=""></string>
-                 <string role="key" value="_tip"></string>
-                 <string value=""></string>
-                 <string role="key" value="_typeName"></string>
-                 <unicode value="Task"></unicode>
-                 <string role="key" value="_valid"></string>
-                 <bool value="1"></bool>
-                 <string role="key" value="class_"></string>
-                 <unicode value="pbl"></unicode>
-                 <string role="key" value="edit"></string>
-                 <bool value="0"></bool>
-                 <string role="key" value="emphasis"></string>
-                 <int value="1"></int>
-                 <string role="key" value="exe.engine.jsidevice.JsIdevice.persistenceVersion"></string>
-                 <int value="1"></int>
-                 <string role="key" value="fields"></string>
-                 <list>
-                  <instance class="exe.engine.field.TextAreaField" reference="106">
-                   <dictionary>
-                    <string role="key" value="_id"></string>
-                    <unicode value="121_2"></unicode>
-                    <string role="key" value="_idevice"></string>
-                    <reference key="105"></reference>
-                    <string role="key" value="_instruc"></string>
-                    <string value=""></string>
-                    <string role="key" value="_name"></string>
-                    <string value=""></string>
-                    <string role="key" value="anchor_names"></string>
-                    <list></list>
-                    <string role="key" value="content_w_resourcePaths"></string>
-                    <unicode content="true" value="&lt;div class=&quot;pbl-task-description&quot;&gt;&lt;p&gt;En algunas ocasiones interesa conocer si un cable tiene continuidad en toda su longitud. Para comprobar la continuidad se suele usar un multímetro que mide la resistencia del conductor. Cuando acabes esta tarea habrás creado un programa que te permitirá saber si un material es o no conductor de la electricidad.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;resources/microbit-ConductorPines.png&quot; alt=&quot;Programa microbit conductor&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; width=&quot;395&quot; height=&quot;331&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Ahora usaremos dos pinzas de cocodrilo para comprobar la conectividad: una irá al pin 0 y otra al pin GND. Lo primero será comprobar que el programa funciona correctamente. Para ello, unimos las dos pinzas y veremos cómo en la micro:bit se muestra el aspa (hay conducción eléctrica). Prueba ahora con otros materiales para ver si son conductores o aislantes. Haz una lista con cinco materiales, indicando si son conductores o aislantes. Al menos debe haber un ejemplo de cada tipo&lt;/p&gt;&lt;/div&gt;"></unicode>
-                    <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
-                    <int value="4"></int>
-                    <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
-                    <int value="2"></int>
-                    <string role="key" value="exe.engine.field.TextAreaField.persistenceVersion"></string>
-                    <int value="3"></int>
-                    <string role="key" value="htmlTag"></string>
-                    <string value="div"></string>
-                    <string role="key" value="images"></string>
-                    <instance class="exe.engine.galleryidevice.GalleryImages">
-                     <dictionary>
-                      <string role="key" value=".listitems"></string>
-                      <list>
-                       <instance class="exe.engine.galleryidevice.GalleryImage">
-                        <dictionary>
-                         <string role="key" value="_caption"></string>
-                         <instance class="exe.engine.field.TextField">
-                          <dictionary>
-                           <string role="key" value="_id"></string>
-                           <int value="502"></int>
-                           <string role="key" value="_idevice"></string>
-                           <none></none>
-                           <string role="key" value="_instruc"></string>
-                           <string value=""></string>
-                           <string role="key" value="_name"></string>
-                           <string value=""></string>
-                           <string role="key" value="content"></string>
-                           <string value=""></string>
-                           <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
-                           <int value="4"></int>
-                          </dictionary>
-                         </instance>
-                         <string role="key" value="_id"></string>
-                         <unicode value="29_121_2.0"></unicode>
-                         <string role="key" value="_imageResource"></string>
-                         <instance class="exe.engine.resource.Resource" reference="107">
-                          <dictionary>
-                           <string role="key" value="_idevice"></string>
-                           <reference key="105"></reference>
-                           <string role="key" value="_package"></string>
-                           <reference key="4"></reference>
-                           <string role="key" value="_storageName"></string>
-                           <string value="microbit-ConductorPines.png"></string>
-                           <string role="key" value="_userName"></string>
-                           <string value="/tmp/tmpl7_DYA.eXe/previews/allyourbase/microbit-ConductorPines.png"></string>
-                           <string role="key" value="checksum"></string>
-                           <string value="e6a505883d8a7d15b3680d8e9c54ab09"></string>
-                           <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
-                           <int value="2"></int>
-                           <string role="key" value="exe.engine.resource._Resource.persistenceVersion"></string>
-                           <int value="2"></int>
-                           <string role="key" value="warningMsg"></string>
-                           <string value=""></string>
-                          </dictionary>
-                         </instance>
-                         <string role="key" value="_parent"></string>
-                         <reference key="106"></reference>
-                         <string role="key" value="_thumbnailResource"></string>
-                         <none></none>
-                         <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
-                         <int value="3"></int>
-                         <string role="key" value="makeThumbnail"></string>
-                         <bool value="0"></bool>
-                        </dictionary>
-                       </instance>
-                      </list>
-                      <string role="key" value="idevice"></string>
-                      <reference key="106"></reference>
-                     </dictionary>
-                    </instance>
-                    <string role="key" value="intlinks_to_anchors"></string>
-                    <dictionary></dictionary>
-                    <string role="key" value="nextImageId"></string>
-                    <int value="1"></int>
-                    <string role="key" value="parentNode"></string>
-                    <reference key="103"></reference>
-                   </dictionary>
-                  </instance>
-                 </list>
-                 <string role="key" value="icon"></string>
-                 <unicode value="activity"></unicode>
-                 <string role="key" value="id"></string>
-                 <unicode value="29"></unicode>
-                 <string role="key" value="ideviceCategory"></string>
-                 <unicode value="Text and Tasks"></unicode>
-                 <string role="key" value="lastIdevice"></string>
-                 <bool value="0"></bool>
-                 <string role="key" value="nextFieldId"></string>
-                 <int value="3"></int>
-                 <string role="key" value="originalicon"></string>
-                 <unicode value="activity"></unicode>
-                 <string role="key" value="parentNode"></string>
-                 <reference key="103"></reference>
-                 <string role="key" value="systemResources"></string>
-                 <list></list>
-                 <string role="key" value="undo"></string>
-                 <bool value="1"></bool>
-                 <string role="key" value="userResources"></string>
-                 <list>
-                  <reference key="107"></reference>
-                 </list>
-                 <string role="key" value="version"></string>
-                 <int value="0"></int>
-                </dictionary>
-               </instance>
-              </list>
-              <string role="key" value="_id"></string>
-              <unicode value="18"></unicode>
-              <string role="key" value="_package"></string>
-              <reference key="4"></reference>
-              <string role="key" value="anchor_fields"></string>
-              <list></list>
-              <string role="key" value="exe.engine.node.Node.persistenceVersion"></string>
-              <int value="2"></int>
-              <string role="key" value="exportType"></string>
-              <string value="website"></string>
-              <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:Inicio:3.%20Ejemplos:3.3.%20Sensores:3.3.6.%20Pines%20de%20entrada%20y%20salida"></string>
-              <string role="key" value="parent"></string>
-              <reference key="56"></reference>
-              <string role="key" value="top_anchors_linked_from_fields"></string>
-              <list></list>
-              <string role="key" value="children"></string>
-              <list></list>
-             </dictionary>
-            </instance>
+            <reference key="103"></reference>
            </list>
           </dictionary>
          </instance>
@@ -6252,11 +6257,12 @@
    <reference key="68"></reference>
    <reference key="82"></reference>
    <reference key="89"></reference>
+   <reference key="103"></reference>
   </list>
   <string role="key" value="backgroundImgTile"></string>
   <bool value="0"></bool>
   <string role="key" value="currentNode"></string>
-  <reference key="103"></reference>
+  <reference key="56"></reference>
   <string role="key" value="dublinCore"></string>
   <instance class="exe.engine.package.DublinCore">
    <dictionary>
