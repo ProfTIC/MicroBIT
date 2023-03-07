@@ -41,11 +41,25 @@
       </li>
    </ul>
    </li>
+   <li><a href="4_proyectos.html" class="daddy">4. Proyectos</a>
+   <ul class="other-section">
+      <li><a href="41_juego_de_reaccin.html" class="daddy">4.1. Juego de reacción</a>
+      <ul class="other-section">
+         <li><a href="411_inicio_del_juego.html" class="no-ch">4.1.1. Inicio del juego</a></li>
+         <li><a href="412_programa_los_botones_a_y_b.html" class="no-ch">4.1.2. Programa los botones A y B</a></li>
+         <li><a href="413_modifica_el_cdigo_anterior_para_que_el_juego_funcione_con_los_pines_0_y_1.html" class="no-ch">4.1.3. Modifica el código anterior para que el juego funcione con los pines 0 y 1</a></li>
+         <li><a href="414_descarga_el_programa_en_la_tarjeta_microbit.html" class="no-ch">4.1.4. Descarga el programa en la tarjeta Micro:BIT</a></li>
+         <li><a href="415_crea_el_tablero_de_juego.html" class="no-ch">4.1.5. Crea el tablero de juego</a></li>
+         <li><a href="416_prueba_el_juego_con_la_tarjeta_microbit.html" class="no-ch">4.1.6. Prueba el juego con la tarjeta Micro:BIT</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
 </ul>
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="335_radio.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
+<a href="335_radio.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="4_proyectos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
@@ -54,22 +68,34 @@
 <article class="iDevice_wrapper textIdevice" id="id28">
 <div class="iDevice emphasis0" >
 <div id="ta28_120_2" class="block iDevice_content">
-<div class="exe-text"><p>La tarjeta micro:bit dispone de 25 conectores situados en el borde inferior, a través de los cuales se pueden programar motores, LEDs o cualquier otro componente o sensor externo. Los pines se pueden manejar usando pinzas de cocodrilo</p>
+<div class="exe-text"><p style="text-align: justify;">La tarjeta micro:bit dispone de 25 conectores situados en el borde inferior, a través de los cuales se pueden programar motores, LEDs o cualquier otro componente o sensor externo. Los pines se pueden manejar usando pinzas de cocodrilo</p>
 <p><img src="Pines.png" alt="Conectores de la tarjeta micro:bit" style="display: block; margin-left: auto; margin-right: auto;" width="384" height="318" /></p>
-<p>Comenzamos con el manejo de los pines 0, 1 y 2. Estos pines son flexibles y tienen diferentes aplicaciones. Por eso los llamamos de propósito general de entrada salida (o con las siglas GPIO,<em> general purpose input and output</em>). Con estos tres pines se pueden leer los valores de los voltajes analógicos y podemos usarlos como conversores analógicos-digitales (ADC,<em> analog-to-digital converter</em>).</p>
+<p style="text-align: justify;">Comenzamos con el manejo de los pines 0, 1 y 2. Estos pines son flexibles y tienen diferentes aplicaciones. Por eso los llamamos de propósito general de entrada salida (o con las siglas GPIO,<em> general purpose input and output</em>). Con estos tres pines se pueden leer los valores de los voltajes analógicos y podemos usarlos como conversores analógicos-digitales (ADC,<em> analog-to-digital converter</em>).</p>
 <p>Vamos a ver algunos ejemplos de uso </p></div>
 </div>
 </div>
 </article>
 <article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id29">
 <div class="iDevice emphasis1" >
-<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea - ¿Hay continuidad?</h1></header>
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea </h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <div id="ta29_121_2" class="block iDevice_content">
-<div class="pbl-task-description"><p>En algunas ocasiones interesa conocer si un cable tiene continuidad en toda su longitud. Para comprobar la continuidad se suele usar un multímetro que mide la resistencia del conductor. Cuando acabes esta tarea habrás creado un programa que te permitirá saber si un material es o no conductor de la electricidad.</p>
+<div class="pbl-task-description"><h2>Ejercicio 1 - ¿Hay continuidad?</h2>
+<p style="text-align: justify;">En algunas ocasiones interesa conocer si un cable tiene continuidad en toda su longitud. Para comprobar la continuidad se suele usar un multímetro que mide la resistencia del conductor. Cuando acabes esta tarea habrás creado un programa que te permitirá saber si un material es o no conductor de la electricidad.</p>
 <p><img src="microbit-ConductorPines.png" alt="Programa microbit conductor" style="display: block; margin-left: auto; margin-right: auto;" width="395" height="331" /></p>
-<p>Ahora usaremos dos pinzas de cocodrilo para comprobar la conectividad: una irá al pin 0 y otra al pin GND. Lo primero será comprobar que el programa funciona correctamente. Para ello, unimos las dos pinzas y veremos cómo en la micro:bit se muestra el aspa (hay conducción eléctrica). Prueba ahora con otros materiales para ver si son conductores o aislantes. Haz una lista con cinco materiales, indicando si son conductores o aislantes. Al menos debe haber un ejemplo de cada tipo</p></div>
+<p style="text-align: justify;">Ahora usaremos dos pinzas de cocodrilo para comprobar la conectividad: una irá al pin 0 y otra al pin GND. Lo primero será comprobar que el programa funciona correctamente. Para ello, unimos las dos pinzas y veremos cómo en la micro:bit se muestra el aspa (hay conducción eléctrica). Prueba ahora con otros materiales para ver si son conductores o aislantes. Haz una lista con cinco materiales, indicando si son conductores o aislantes. Al menos debe haber un ejemplo de cada tipo.</p>
+<h3>Ejercicio 2 - Bloqueamos y desbloqueamos la tarjeta Micro:BIT con los pines 0 y 1</h3>
+<p style="text-align: justify;">En esta tarea vamos a crear un programa que permita desbloquear la tarjeta Micro:BIT cuando se seleccione el pin 0 y bloquearla cuando se pulse el pin 1. Para ello, seguiremos los siguientes pasos:</p>
+<ul>
+<li style="text-align: justify;">Crea una variable bloqueado, que valdrá verdadero al inicio del programa</li>
+<li style="text-align: justify;">Si pulsamos el pin p1, entonces la variable valdrá verdadero y se mostrará el icono de la cruz para indicar que la tarjeta está bloqueada</li>
+</ul>
+<p style="text-align: justify;">Para comprobar si está desbloqueada o no, usaremos el siguiente código:</p>
+<p style="text-align: center;"><img src="Codigo_Bloqueo_pin0.png" alt="Código bloqueo pin 0" width="779" height="274" /></p>
+<p style="text-align: justify;">Ejecuta el código con el simulador y comprueba que si pulsas el pin 0, te muestra la opción de desbloqueo (el aspa) y si seleccionas el pin 1 aparecerá el bloqueo (el icono de la cruz)</p>
+<h3>Parte voluntaria</h3>
+<p style="text-align: justify;">Añade al código anterior las instrucciones que necesites para que si la tarjeta está bloqueada se haga una pausa de 2 segundos y se muestre el valor de la temperatura</p></div>
 </div>
 </div>
 </div>
@@ -82,7 +108,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="335_radio.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
+<a href="335_radio.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="4_proyectos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
